@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -80,23 +79,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SnJ-0y-f6P">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="SD3-Vx-5ab">
-                                <connections>
-                                    <action selector="CameraTapped:" destination="P7n-1C-xqE" id="Zsc-oh-oIr"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Photos" style="plain" id="mDV-B0-Vt5">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iGt-Ig-LdS">
-                                    <rect key="frame" x="189" y="7" width="71" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Photos"/>
-                                </button>
-                                <connections>
-                                    <action selector="PhotosTapped:" destination="P7n-1C-xqE" id="ums-C4-qps"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Photos" style="plain" id="mDV-B0-Vt5">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iGt-Ig-LdS">
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Photos"/>
+                            </button>
+                            <connections>
+                                <action selector="PhotosTapped:" destination="P7n-1C-xqE" id="ums-C4-qps"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="gameImageView" destination="Adh-ci-iRL" id="wTR-pR-oPN"/>
